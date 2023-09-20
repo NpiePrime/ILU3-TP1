@@ -3,12 +3,12 @@ import jeu.*;
 
 public class Sabot {
 	private Carte[] cartes;
-	private int nbCartes;
-	private int nbCartesMax = 110;
+	private int nbCartes=0;
+	private int nbCartesMax;
 	
-	public Sabot(int nbCartes) {
+	public Sabot(int nbCartesMax) {
 		Carte[] cartes = new Carte[nbCartesMax];
-		this.nbCartes = nbCartes;
+		this.nbCartesMax = nbCartesMax;
 	}
 	
 	public boolean estVide() {
