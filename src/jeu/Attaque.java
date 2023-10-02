@@ -5,6 +5,6 @@ public class Attaque extends Bataille {
 		super(nombre, type);
 		// TODO Auto-generated constructor stub
 	}
-	
+	//unix
 
 }
