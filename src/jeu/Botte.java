@@ -6,8 +6,30 @@ public class Botte extends Probleme{
 		// TODO Auto-generated constructor stub
 	}
 
-	public static void main(String[] args) {
-		Botte botte = new Botte(0, Type.ACCIDENT );
-		System.out.println(botte);
+	@Override
+	public String toString() {
+		String nom = "";
+		switch (getType()) {
+		case FEU: 
+			nom = "VehiculePrioritaire";
+			break;
+		
+		case ACCIDENT:  
+			nom = "AsDuVolant";
+			break;
+		
+		case CREVAISON: 
+			nom = "Increvable";
+			break;
+		
+		case ESSENCE: 
+			nom = "CiterneEssence";
+			break;
+			
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + getType());
+		}
+		return nom;
 	}
+	
 }

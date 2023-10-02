@@ -11,5 +11,8 @@ public abstract class Carte {
 	public String toString() {
 		return super.toString();
 	}
+	public int getNombre() {
+		return nombre;
+	}
 
 }
