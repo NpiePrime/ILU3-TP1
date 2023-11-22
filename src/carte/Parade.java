@@ -1,4 +1,4 @@
-package jeu;
+package carte;
 
 public class Parade extends Bataille{
 
@@ -11,7 +11,7 @@ public class Parade extends Bataille{
 		String nom = "";
 		switch (getType()) {
 		case FEU: 
-			nom = "FeuVert";
+			nom = "Feu Vert";
 			break;
 		
 		case ACCIDENT:  
@@ -19,7 +19,7 @@ public class Parade extends Bataille{
 			break;
 		
 		case CREVAISON: 
-			nom = "RoueDeSecours";
+			nom = "Roue De Secours";
 			break;
 		
 		case ESSENCE: 

@@ -1,4 +1,4 @@
-package jeu;
+package carte;
 
 public enum Type {
 	FEU("Feu"), ESSENCE("Essence"), CREVAISON("Crevaison"), ACCIDENT("Accident");

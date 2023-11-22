@@ -1,4 +1,4 @@
-package jeu;
+package carte;
 public class Attaque extends Bataille {
 
 	public Attaque(int nombre, Type type) {
@@ -11,7 +11,7 @@ public class Attaque extends Bataille {
 		String nom = "";
 		switch (getType()) {
 		case FEU: 
-			nom = "FeuRouge";
+			nom = "Feu Rouge";
 			break;
 		
 		case ACCIDENT:  
@@ -23,7 +23,7 @@ public class Attaque extends Bataille {
 			break;
 		
 		case ESSENCE: 
-			nom = "PanneEssence";
+			nom = "Panne Essence";
 			break;
 			
 		default:
@@ -41,4 +41,5 @@ public class Attaque extends Bataille {
 		Botte botte = new Botte(0, Type.FEU);
 		System.out.println(botte);
 	}
+	
 }

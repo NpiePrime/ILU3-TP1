@@ -1,12 +1,18 @@
-package jeu;
+package carte;
 public class Borne extends Carte {
 	private int km;
 
 	public Borne(int nombre, int km) {
 		super(nombre);
 		this.km = km;
-		// TODO Auto-generated constructor stub
 	}
 	
-
+	public int getKm() {
+		return km;
+	}
+	
+	@Override
+	public String toString() {
+		return "Borne " + km;
+	}
 }
